@@ -1,12 +1,13 @@
 'use strict';
 
 function safeCall(f) {
-    try {
-        f();
-        return true;
-    } catch(error) {
-        return false;
+  try {
+    f();
+      return true;
     }
+  catch(error) {
+      return false;
+  }
 }
 
 safeCall(() => console.log('Hello!')); // true
